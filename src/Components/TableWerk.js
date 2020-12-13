@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import {makeStyles, rgbToHex, useTheme} from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
@@ -89,7 +89,8 @@ TablePaginationActions.propTypes = {
 
 const useStyles2 = makeStyles(theme => ({
     table: {
-        minWidth: 650
+        minWidth: 650,
+        background: "whitesmoke"
     },
     avatar: {
         margin: theme.spacing(1),
@@ -126,8 +127,6 @@ export default function DenseTable() {
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(5);
 
-
-
     let isLoading = true;
 
     async function sampleFunc() {
@@ -155,7 +154,6 @@ export default function DenseTable() {
         setRowsPerPage(parseInt(event.target.value, 10));
         setPage(0);
     };
-
 
     if (firstLoad) {
         sampleFunc();

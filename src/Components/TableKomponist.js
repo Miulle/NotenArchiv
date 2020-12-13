@@ -177,7 +177,7 @@ export default function DenseTable() {
                 <CircularProgress />
             ) : (
                 <TableContainer
-                    style={{ width: "90%", margin: "0 10px" }}
+                    style={{ width: "70%", margin: "0 10px" }}
                     component={Paper}
                 >
                     <Table className={classes.table} stickyHeader size="small" aria-label="a dense table">
@@ -233,24 +233,25 @@ export default function DenseTable() {
                             </TableRow>
                         </TableFooter>
                     </Table>
+                    <Link className={classes.link} to="/addkomponist">
+                        {" "}
+                        <Typography align="left">
+                            &#x2190; Head back to save data
+                        </Typography>{" "}
+                    </Link>
+                    <Link className={classes.link} to="/">
+                        {" "}
+                        <Typography align="left">
+                            &#x2190; Back to landing page
+                        </Typography>{" "}
+                    </Link>
                 </TableContainer>
             )}
             <FormControlLabel
                 control={<Switch checked={dense} onChange={handleChangeDense} />}
                 label="Dense padding"
             />
-            <Link className={classes.link} to="/addkomponist">
-                {" "}
-                <Typography align="left">
-                    &#x2190; Head back to save data
-                </Typography>{" "}
-            </Link>
-            <Link className={classes.link} to="/">
-                {" "}
-                <Typography align="left">
-                    &#x2190; Back to landing page
-                </Typography>{" "}
-            </Link>
+
 
         </div>
 

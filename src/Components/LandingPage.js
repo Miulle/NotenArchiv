@@ -87,14 +87,14 @@ export default function LandingPage() {
                             <Link to="/addkonzert">Add Konzert</Link>
                         </Grid>
                     </Grid>
-                    <Grid container justify="center" spacing="7">
-                        <Grid item>
-                            <Link to="/emp">View Employee Records</Link>
-                        </Grid>
-                        <Grid item>
-                            <Link to="/addemp">add Employee</Link>
-                        </Grid>
-                    </Grid>
+                    {/*<Grid container justify="center" spacing="7">*/}
+                    {/*    <Grid item>*/}
+                    {/*        <Link to="/emp">View Employee Records</Link>*/}
+                    {/*    </Grid>*/}
+                    {/*    <Grid item>*/}
+                    {/*        <Link to="/addemp">add Employee</Link>*/}
+                    {/*    </Grid>*/}
+                    {/*</Grid>*/}
                     {/*<Grid container justify="center" spacing="7">*/}
                     {/*    <Grid item>*/}
                     {/*        <Link to="/testPage">Go to testPage</Link>*/}
