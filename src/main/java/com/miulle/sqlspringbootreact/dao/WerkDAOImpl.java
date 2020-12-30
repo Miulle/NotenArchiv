@@ -17,6 +17,7 @@ public class WerkDAOImpl implements WerkDAO{
     @Autowired
     private EntityManager entityManager;
 
+    //fetch all werfk-items
     @Override
     public List<Werk> get() {
         Session currSession = entityManager.unwrap(Session.class);
@@ -25,6 +26,7 @@ public class WerkDAOImpl implements WerkDAO{
         return list;
     }
 
+    // Fetch single werk-item with id param
     @Override
     public Werk get (int id) {
         Session currSession = entityManager.unwrap(Session.class);
@@ -32,12 +34,14 @@ public class WerkDAOImpl implements WerkDAO{
         return emp;
     }
 
+    //save or update werk-item
     @Override
     public void save(Werk werk) {
         Session currSession = entityManager.unwrap(Session.class);
         currSession.saveOrUpdate(werk);
     }
 
+    //delete werk-item
     @Override
     public void delete(int id) {
         Session currSession = entityManager.unwrap(Session.class);

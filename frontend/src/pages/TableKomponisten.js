@@ -111,7 +111,7 @@ const useStyles2 = makeStyles(theme => ({
         marginLeft: "10%",
         alignSelf: "flex-start",
         "&:hover": {
-            color: "rgba(0,0,0,1)"
+            color: "rgba(144,144,0,1)"
         }
     }
 }));
