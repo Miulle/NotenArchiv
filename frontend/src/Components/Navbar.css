@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&family=Lato&display=swap');
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+  background: rgba(20, 20, 20, 1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-header a img {
+  height: 45px;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-center {
+  color: white;
+}
+
+.nav-toggle {
+  display: flex;
+}
+
+.nav-toggle:hover {
+  transform: rotate(90deg);
+}
+
+li {
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: all 0.3s linear;
+}
+
+li:hover {
+  font-size: 1.1rem;
+  background: #333;
+}
+
+Link:hover {
+  background: grey;
+}
+
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.show-container {
+  height: 10rem;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+    width: 100vw;
+    margin: auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    left: 0;
+  }
+
+  img {
+    height: 60px;
+  }
+
+  .nav-header {
+    padding: 0;
+    margin: auto 0;
+  }
+
+  .links {
+    display: flex;
+  }
+
+  .links-container {
+    height: auto !important;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
